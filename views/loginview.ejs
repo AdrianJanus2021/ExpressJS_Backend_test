@@ -1,0 +1,32 @@
+<head>
+    <style>
+        img {
+            width: 400px;
+
+        }
+    </style>
+</head>
+<body>
+<h3>
+    Successful login
+</h3>
+<h1> Hello <span style="color: orangered"><%=name%></span></h1>
+<h1> Great weather we're havin</h1>
+
+<img src="https://gifdb.com/images/high/borat-very-nice-animated-mouth-wqsynz06pvei4z06.gif">
+<br/><br/>
+<form action="http://localhost:3000/users/logout" method="post">
+    <button type="submit">logout</button>
+    <br/><br/>
+</form>
+<br/><br/>
+<form action="http://localhost:3000/users/read" method="post">
+    <label>File name:
+        <input type="text" id="filename" name="file">
+    </label>
+    <button type="submit">read file</button>
+    <br/><br/>
+</form>
+<br/><br/>
+<a href="http://localhost:3000">Return to Login Page</a>
+</body>

@@ -1,0 +1,31 @@
+<head>
+<style>
+    h3 {
+        color: lightgrey;
+    }
+    img {
+        border-radius: 50%;
+        width: 300px;
+
+    }
+</style>
+</head>
+<body>
+<h3>
+    server time is <%= time_var%>
+</h3>
+<h1><%= "Login Page:" %></h1>
+<form action="http://localhost:3000/users/login" method="post">
+    <label>Login
+        <input type="text" id="username" name="login">
+    </label>
+    <br/><br/>
+    <label>Password
+        <input type="password" id="password" name="password">
+    </label>
+    <br/><br/>
+    <button type="submit">login</button>
+    <br/><br/>
+</form>
+<img src="https://qph.cf2.quoracdn.net/main-qimg-2733b8113206c2c2fd3a672b60c3c63d-lq">
+</body>
